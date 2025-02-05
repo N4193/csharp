@@ -1,4 +1,5 @@
 using System;
+
 static class LogLine
 {
     public static string Message(string logLine) =>
@@ -7,6 +8,7 @@ static class LogLine
     public static string LogLevel(string logLine) => 
         logLine.Substring(logLine.IndexOf('[') +1 ,logLine.IndexOf(']') -1).ToLower();
     
-    public static string Reformat(string logLine)=>
-        ($"{LogLine.Message(logLine)} ( {LogLine.LogLevel(logLine)} )");
+
+     public static string Reformat(string logLine)=>
+        ($"{LogLine.Message(logLine)} ({LogLine.LogLevel(logLine)})");
 }
