@@ -1,5 +1,4 @@
 # CSharp
-
 Welcome to C#(CSharp) homework Track.
 
 ## Introduction
