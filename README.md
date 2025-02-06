@@ -1,4 +1,4 @@
-# CSharp
+## CSharp
 Welcome to C#(CSharp) homework Track.
     This Track From Exercism Website is Completed By @N4193 (nnaigeon@outlook.fr)
 
@@ -20,7 +20,7 @@ some folder to learn C# lang
 ## Source
 - @N4193
 
-### Special thank's to ppl creat exercise for me to solve 
+## Special thank's to ppl create exercises to solve 
 //sorry for ppl i forget here i love you a lot ♥
 - @yzAlvin
 - @ErikSchierboom
@@ -29,9 +29,9 @@ some folder to learn C# lang
 - @j2jensen
 - @robkeim
 
-### C#-EZcheatSheet 
+## C#-EZcheatSheet 
     //log the proprety "year" from Variable "toto"
-Console.WriteLine(toto.year);
+    Console.WriteLine(toto.year);
 
     //log the type of the proprety "year" from Variable "toto"
-Console.WriteLine(toto.year.GetType());
+    Console.WriteLine(toto.year.GetType());
