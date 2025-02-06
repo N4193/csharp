@@ -27,3 +27,10 @@ some folder to learn C# lang
 - @mikedamay
 - @j2jensen
 - @robkeim
+
+### C#-EZcheatSheet 
+    //log the proprety "year" from Variable "toto"
+Console.WriteLine(toto.year);
+
+    //log the type of the proprety "year" from Variable "toto"
+Console.WriteLine(toto.year.GetType());
