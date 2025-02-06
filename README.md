@@ -2,7 +2,8 @@
 Welcome to C#(CSharp) homework Track.
 
 ## Introduction
-This is a simple C# folder with my homework to proof my skill to myself ☺♥
+This is a simple C# folder with my homework to proof my skill to myself.☺
+One folder a time you can test the code by using the "dotnet test" command 
 
 ## What's here ?
 some folder to learn C# lang 
@@ -14,8 +15,6 @@ some folder to learn C# lang
 - log-levels
 - lucians-luscious-lasagna
 - phone-number-analysis
-
-
 
 ## Source
 - @N4193
