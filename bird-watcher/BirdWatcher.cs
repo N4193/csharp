@@ -8,15 +8,15 @@ class BirdCount
     {
         this.birdsPerDay = birdsPerDay;
     }
-
     public static int[] LastWeek()=> [0, 2, 5, 3, 7, 8, 4];
     
     public int Today() => birdsPerDay[birdsPerDay.Length-1];
     
     public void IncrementTodaysCount()
     {
-        birdsPerDay[birdsPerDay.Length-1] =  birdsPerDay[birdsPerDay.Length-1]+1;
+        birdsPerDay[birdsPerDay.Length-1] = birdsPerDay[birdsPerDay.Length-1]+1;
     }
+
     public bool HasDayWithoutBirds()
     {
         for(int i = 0; i < 7; i++)
@@ -24,18 +24,31 @@ class BirdCount
             if(birdsPerDay[i] == 0)
             {
                 return true;
-            }
+            } 
         }
         return false;
     }
 
     public int CountForFirstDays(int numberOfDays)
     {
-        throw new NotImplementedException("Please implement the BirdCount.CountForFirstDays() method");
+        int totalBird = 0;
+        for(int i = 0; i < numberOfDays; i++)
+        {
+            totalBird = totalBird + birdsPerDay[i];
+        }
+        return totalBird;
     }
 
     public int BusyDays()
     {
-        throw new NotImplementedException("Please implement the BirdCount.BusyDays() method");
+        int busyDays = 0;
+        for(int i = 0; i < 7; i++)
+        {
+            if(birdsPerDay[i] >=5)
+            {
+                busyDays=busyDays+1;
+            } 
+        }
+        return busyDays;
     }
 }
