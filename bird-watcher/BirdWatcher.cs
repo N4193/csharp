@@ -1,4 +1,5 @@
-using System;
+//V2 using System.Linq & comunity help to factor code
+using System.Linq;
 
 class BirdCount
 {
@@ -8,47 +9,21 @@ class BirdCount
     {
         this.birdsPerDay = birdsPerDay;
     }
-    public static int[] LastWeek()=> [0, 2, 5, 3, 7, 8, 4];
+    public static int[] LastWeek() => new[] { 0, 2, 5, 3, 7, 8, 4 };
     
-    public int Today() => birdsPerDay[birdsPerDay.Length-1];
+    public int Today() => birdsPerDay.Last();
     
     public void IncrementTodaysCount()
     {
-        birdsPerDay[birdsPerDay.Length-1] = birdsPerDay[birdsPerDay.Length-1]+1;
+        birdsPerDay[^1]++;
     }
 
-    public bool HasDayWithoutBirds()
-    {
-        for(int i = 0; i < 7; i++)
-        {
-            if(birdsPerDay[i] == 0)
-            {
-                return true;
-            } 
-        }
-        return false;
-    }
+    public bool HasDayWithoutBirds() => 
+        birdsPerDay.Contains(0);
+   
+    public int CountForFirstDays(int numberOfDays) =>
+        birdsPerDay.Take(numberOfDays).Sum();
 
-    public int CountForFirstDays(int numberOfDays)
-    {
-        int totalBird = 0;
-        for(int i = 0; i < numberOfDays; i++)
-        {
-            totalBird = totalBird + birdsPerDay[i];
-        }
-        return totalBird;
-    }
-
-    public int BusyDays()
-    {
-        int busyDays = 0;
-        for(int i = 0; i < 7; i++)
-        {
-            if(birdsPerDay[i] >=5)
-            {
-                busyDays=busyDays+1;
-            } 
-        }
-        return busyDays;
-    }
+    public int BusyDays()=>
+        birdsPerDay.Count(day => day >= 5);
 }
