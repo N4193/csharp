@@ -8,14 +8,18 @@ One folder a time you can test the code by using the "dotnet test" command
 
 ## What's here ?
 some folder to learn C# lang 
-- annalyns-infiltration
-- booking-up-for-beauty
-- cars-assemble
-- hello-world ->The first one ♥
-- log-analysis
-- log-levels
-- lucians-luscious-lasagna
-- phone-number-analysis
+- annalyns-infiltration             -> opperator && and || 
+- bird-watcher                      -> array[]
+- booking-up-for-beauty             -> DateTime & Parse()
+- cars-assemble                     -> comparator & logic algorithm
+- hello-world                       -> The first one you know ♥     
+- log-analysis                      -> string type & Split() 
+- log-levels                        -> string type & trim(),IndexOf()
+- lucians-luscious-lasagna          -> int type & logic algorithm
+- motorbike                         ->  Todo ,not implemented now 
+- phone-number-analysis             -> analyse array[] & Split()
+- roll-the-die                      -> random()
+- todoListProject                   ->  Comming soon
 
 ## Source
 - @N4193
@@ -28,10 +32,11 @@ some folder to learn C# lang
 - @mikedamay
 - @j2jensen
 - @robkeim
+- @aage
 
 ## C#-EZcheatSheet 
-    //log the proprety "year" from Variable "toto"
+    //output the proprety "year" from Variable "toto"
     Console.WriteLine(toto.year);
 
-    //log the type of the proprety "year" from Variable "toto"
+    //output the type of the proprety "year" from Variable "toto"
     Console.WriteLine(toto.year.GetType());
