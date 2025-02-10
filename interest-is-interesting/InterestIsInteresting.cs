@@ -20,18 +20,18 @@ static class SavingsAccount
         return 2.475f;
     }
 
-    public static decimal Interest(decimal balance)
-    {
-        throw new NotImplementedException("Please implement the (static) SavingsAccount.Interest() method");
-    }
-
-    public static decimal AnnualBalanceUpdate(decimal balance)
-    {
-        throw new NotImplementedException("Please implement the (static) SavingsAccount.AnnualBalanceUpdate() method");
-    }
+    public static decimal Interest(decimal balance) => (balance * (decimal)InterestRate(balance))/100;
+   
+    public static decimal AnnualBalanceUpdate(decimal balance) => balance + Interest(balance);
 
     public static int YearsBeforeDesiredBalance(decimal balance, decimal targetBalance)
     {
-        throw new NotImplementedException("Please implement the (static) SavingsAccount.YearsBeforeDesiredBalance() method");
+        int _YearsBeforeDesiredBalance =0;
+        while ( balance < targetBalance)
+        {
+            _YearsBeforeDesiredBalance = _YearsBeforeDesiredBalance +1 ;
+            balance = balance + Interest(balance);
+        }
+        return _YearsBeforeDesiredBalance;
     }
 }
