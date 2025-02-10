@@ -8,17 +8,18 @@ One folder a time you can test the code by using the "dotnet test" command
 
 ## What's here ?
 some folder to learn C# lang 
-- annalyns-infiltration             -> opperator && and || 
-- bird-watcher                      -> array[]
+- annalyns-infiltration             -> Opperator "&&" and "||" 
+- bird-watcher                      -> Array[]
 - booking-up-for-beauty             -> DateTime & Parse()
-- cars-assemble                     -> comparator & logic algorithm
-- hello-world                       -> The first one you know ♥     
-- log-analysis                      -> string type & Split() 
-- log-levels                        -> string type & trim(),IndexOf()
-- lucians-luscious-lasagna          -> int type & logic algorithm
+- cars-assemble                     -> Comparator & Logic algorithm
+- hello-world                       -> The first one you know ♥
+- interest-is-interesting           -> Float variable & While() loop     
+- log-analysis                      -> String type & Split() 
+- log-levels                        -> String type & Trim(),IndexOf()
+- lucians-luscious-lasagna          -> Int type & Logic algorithm
 - motorbike                         ->  Todo ,not implemented now 
-- phone-number-analysis             -> analyse array[] & Split()
-- roll-the-die                      -> random()
+- phone-number-analysis             -> Analyse Array[] & Split()
+- roll-the-die                      -> Random()
 - todoListProject                   ->  Comming soon
 
 ## Source
