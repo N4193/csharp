@@ -20,6 +20,7 @@ some folder to learn C# lang
 - motorbike                         ->  Todo ,not implemented now 
 - phone-number-analysis             -> Analyse Array[] & Split()
 - roll-the-die                      -> Random()
+- squeaky-clean                     -> Char & StringBluider()
 - todoListProject                   ->  Comming soon
 
 ## Source

@@ -1,54 +1,51 @@
 using System;
-
+using System.Text;
+using System.Globalization;
+using System.Text.RegularExpressions;
 public static class Identifier
 {
-    
     public static string Clean(string identifier)
     {
-        string Final = initialisation();
-        Console.WriteLine(Final);
-        Final = CleanSpace(identifier,Final);
-        Console.WriteLine(Final);
-        Final = CleanCTRL(identifier,Final);
-        Console.WriteLine(Final);
-        return Final;
-    }
-    public static string initialisation()
-    {
-        string Final = "";
-        return Final;
-    }
-
-    public static string CleanSpace(string identifier,string Final)
-    {
-        string CleanSpace = Final;
-        foreach (char element in identifier)
+        StringBuilder _Clean = new StringBuilder(identifier, 50);
+        
+        //task 1
+        _Clean.Replace(' ', '_');
+        //loop for search
+        for (int i = _Clean.Length - 1; i >= 0; i--)
         {
-            if (element.ToString() == " ")
-            {
-                CleanSpace = CleanSpace + "_";
+            //task 2 if char is control
+            if (char.IsControl(_Clean[i]))
+            { 
+                _Clean.Remove(i, 1);
+                _Clean.Insert(i, "CTRL");
             }
-            else
-            {
-                CleanSpace = CleanSpace + element;
-            }
-        }
-        return CleanSpace;
-    }
-        public static string CleanCTRL(string identifier,string Final)
-    {
-        string CleanCTRL = Final;
-        foreach (char element in identifier)
+            
+            //task3 remove "-" + ToUpperInvariant()
+            if (_Clean[i] == '-' )   
+            { 
+                 _Clean.Remove(i, 1);
+                 _Clean[i] = char.ToUpperInvariant(_Clean[i]);
+            }  
+        }    
+        //task4 if char is "special char" or "number"
+        if (!(_Clean.ToString() == Regex.Replace(_Clean.ToString(), @"[^\p{L}]", "")))
         {
-            if (element.ToString() == "\0")
-            {
-                CleanCTRL = CleanCTRL + "CTRL";
-            }
-            else
-            {
-                CleanCTRL = CleanCTRL + element;
-            }
+            string input = Regex.Replace(_Clean.ToString(), @"[^\p{L}_\s]", "");
+            _Clean.Clear().Append(input);
         }
-        return CleanCTRL;
+        //task5 if char is a greek lettrer (thank IA for this one lol I lock 4 hour but now understand the code )
+        for (int i = _Clean.Length - 1; i >= 0; i--)
+        {
+            if (_Clean[i] >= 'α' && _Clean[i] <= 'ω') 
+            {
+                _Clean.Remove(i, 1);
+            }
+        }        
+        //LOG
+        Console.WriteLine(_Clean.Length);
+        Console.WriteLine(_Clean);
+        
+        //return
+        return _Clean.ToString();
     }
 }
