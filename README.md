@@ -29,7 +29,7 @@ some folder to learn C# lang
 - @N4193
 
 ## Special thank's to ppl create exercises to solve 
-//sorry for ppl i forget here i love you a lot ♥
+
 - @yzAlvin
 - @ErikSchierboom
 - @valentin-p
@@ -38,6 +38,8 @@ some folder to learn C# lang
 - @robkeim
 - @maurelio1234
 - @aage
+  
+//sorry for ppl i forget here i love you a lot ♥
 
 ## C#-EZcheatSheet 
     //output the proprety "year" from Variable "toto"
