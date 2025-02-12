@@ -19,42 +19,18 @@ class RemoteControlCar
         this.speed = speed;
         this.batteryDrain = batteryDrain;
     }
-
-    public bool BatteryDrained()
-    {
-        if (get_batteryDrain() > get_batteries())
-        {
-            this._BatteryDrained = true;
-            return this._BatteryDrained; 
-        }
-        while(get_batteries() >= 1)
-        {
-            Console.WriteLine($"baterie is:{get_batteries()} percent");
-            this._BatteryDrained = false;
-            return this._BatteryDrained;
-        }
-        Console.WriteLine("Low Battrie indicator");
-        this._BatteryDrained = true;
-        return this._BatteryDrained;        
-    }
-    
+    public bool BatteryDrained()=>(get_batteries() - get_batteryDrain()) < 0;
     public int DistanceDriven() => this.metersDriven;
     public void Drive()
     {
         if (!(BatteryDrained()))
         {
-            Console.WriteLine("Drive !");
             this.metersDriven = DistanceDriven() + (get_speed());
             this.batteries = this.batteries - this.batteryDrain;
         }  
-        else if(this._BatteryDrained == true)
-        {
-            Console.WriteLine($"can't drive ,battery is : {this.batteries} percent");   
-        }
     }
     public static RemoteControlCar Nitro() => new RemoteControlCar(50,4); 
 }
-
 class RaceTrack
 { 
     int distanceRaceTrack = 0;
