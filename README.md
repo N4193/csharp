@@ -19,6 +19,7 @@ some folder to learn C# lang
 - lucians-luscious-lasagna          -> Int type & Logic algorithm
 - motorbike                         ->  Todo ,not implemented now 
 - phone-number-analysis             -> Analyse Array[] & Split()
+- need-for-speed                    -> class & constructor
 - roll-the-die                      -> Random()
 - squeaky-clean                     -> Char & StringBluider()
 - tim-from-marketing                -> nullable type + StringBluider()
