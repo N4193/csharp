@@ -21,6 +21,7 @@ some folder to learn C# lang
 - phone-number-analysis             -> Analyse Array[] & Split()
 - roll-the-die                      -> Random()
 - squeaky-clean                     -> Char & StringBluider()
+- tim-from-marketing                -> nullable type + StringBluider()
 - todoListProject                   ->  Comming soon
 
 ## Source
@@ -34,6 +35,7 @@ some folder to learn C# lang
 - @mikedamay
 - @j2jensen
 - @robkeim
+- @maurelio1234
 - @aage
 
 ## C#-EZcheatSheet 
