@@ -29,7 +29,6 @@ some folder to learn C# lang
 - @N4193
 
 ## Special thank's to ppl create exercises to solve 
-
 - @yzAlvin
 - @ErikSchierboom
 - @valentin-p
@@ -38,7 +37,7 @@ some folder to learn C# lang
 - @robkeim
 - @maurelio1234
 - @aage
-  
+
 //sorry for ppl i forget here i love you a lot ♥
 
 ## C#-EZcheatSheet 

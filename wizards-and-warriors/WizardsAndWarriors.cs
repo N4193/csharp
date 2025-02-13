@@ -2,49 +2,40 @@ using System;
 
 abstract class Character
 {
+    //propety
+    public string _characterType = "";
+    public bool _Vulnerable = false;
+    public bool _PrepareSpell = false;
+    //method
     protected Character(string characterType)
     {
-        throw new NotImplementedException("Please implement the Character() constructor");
+        _characterType = characterType;
     }
-
     public abstract int DamagePoints(Character target);
-
-    public virtual bool Vulnerable()
-    {
-        throw new NotImplementedException("Please implement the Character.Vulnerable() method");
-    }
-
-    public override string ToString()
-    {
-        throw new NotImplementedException("Please implement the Character.ToString() method");
-    }
+    public abstract string ToString();
+    public virtual bool Vulnerable() => _Vulnerable;
 }
-
-class Warrior : Character
-{
-    public Warrior() : base("TODO")
-    {
-    }
-
-    public override int DamagePoints(Character target)
-    {
-        throw new NotImplementedException("Please implement the Warrior.DamagePoints() method");
-    }
-}
-
 class Wizard : Character
 {
-    public Wizard() : base("TODO")
+    public Wizard() : base("Wizard") 
     {
+        if (base._PrepareSpell)
+        {
+            base._Vulnerable = false;
+        } 
+        base._Vulnerable = true;      
     }
-
-    public override int DamagePoints(Character target)
-    {
-        throw new NotImplementedException("Please implement the Wizard.DamagePoints() method");
-    }
-
+    public override string ToString() => $"Character is a {base._characterType}";
+    public override int DamagePoints(Character target) => target._Vulnerable ? 3 : 12;
     public void PrepareSpell()
     {
-        throw new NotImplementedException("Please implement the Wizard.PrepareSpell() method");
+        base._PrepareSpell = true;
+        base._Vulnerable = false;
     }
+}
+class Warrior : Character
+{
+    public Warrior() : base("Warrior"){}
+    public override string ToString() => $"Character is a {base._characterType}";
+    public override int DamagePoints(Character target) => target._Vulnerable ? 10 : 6; 
 }
