@@ -38,10 +38,11 @@ some folder to learn C# lang
 - @robkeim
 - @maurelio1234
 - @aage
+- @sanderploegsma
 
 //sorry for ppl i forget here i love you a lot ♥
 
-## C#-EZcheatSheet 
+## C#-EZcheatSheet / toolbox
     //output the proprety "year" from Variable "toto"
     Console.WriteLine(toto.year);
 
@@ -51,3 +52,27 @@ some folder to learn C# lang
     //factor little if statement for return
     //memo : is_this_condition_true ? yes : no
     condition ? consequent : alternative
+
+    //---   I build lil dirty tool to scan _CHANGE_ME proprety & method() 
+    object MyVarToInspect = _CHANGE_ME;        //changer la variable report ici /!\   
+    if (MyVarToInspect == null) Console.WriteLine("null object");
+        Console.WriteLine($"object: {MyVarToInspect}");
+        var type = MyVarToInspect.GetType();
+        //method() loop 
+        foreach (var method in type.GetMethods())
+        {
+            Console.WriteLine($"Method: {method.Name}()");
+        }
+        //value loop
+        foreach (var prop in type.GetProperties())
+        {
+            if (prop.PropertyType == typeof(string))
+            {
+                var value = prop.GetValue(MyVarToInspect)?.ToString();
+                if (!string.IsNullOrWhiteSpace(value))
+                {
+                    Console.WriteLine($"valeurs : {value}");
+                }
+            }
+        }
+    //---
