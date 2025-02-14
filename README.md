@@ -18,12 +18,13 @@ some folder to learn C# lang
 - log-levels                        -> String type & Trim(),IndexOf()
 - lucians-luscious-lasagna          -> Int type & Logic algorithm
 - motorbike                         ->  Todo ,not implemented now 
-- phone-number-analysis             -> Analyse Array[] & Split()
 - need-for-speed                    -> class & constructor
+- phone-number-analysis             -> Analyse Array[] & Split()
 - roll-the-die                      -> Random()
 - squeaky-clean                     -> Char & StringBluider()
 - tim-from-marketing                -> nullable type + StringBluider()
 - todoListProject                   ->  Comming soon
+- wizard-and-warriors               -> Class and Inheritance
 
 ## Source
 - @N4193
@@ -46,3 +47,7 @@ some folder to learn C# lang
 
     //output the type of the proprety "year" from Variable "toto"
     Console.WriteLine(toto.year.GetType());
+
+    //factor little if statement for return
+    //memo : is_this_condition_true ? yes : no
+    condition ? consequent : alternative
