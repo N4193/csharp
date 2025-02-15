@@ -39,6 +39,11 @@ some folder to learn C# lang
 - @maurelio1234
 - @aage
 - @sanderploegsma
+- @bressain
+- @jwood803
+- @kytrinyx
+- @NextNebula
+- @wolf99
 
 //sorry for ppl i forget here i love you a lot ♥
 
