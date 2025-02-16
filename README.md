@@ -11,6 +11,7 @@ some folder to learn C# lang
 - annalyns-infiltration             -> Opperator "&&" and "||" 
 - bird-watcher                      -> Array[]
 - booking-up-for-beauty             -> DateTime & Parse()
+- calculator-conundrum              -> execption case 
 - cars-assemble                     -> Comparator & Logic algorithm
 - hello-world                       -> The first one you know ♥
 - interest-is-interesting           -> Float variable & While() loop   
