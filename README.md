@@ -13,9 +13,11 @@ some folder to learn C# lang
 - booking-up-for-beauty             -> DateTime & Parse()
 - cars-assemble                     -> Comparator & Logic algorithm
 - hello-world                       -> The first one you know ♥
-- interest-is-interesting           -> Float variable & While() loop     
+- interest-is-interesting           -> Float variable & While() loop   
+- leap                              -> algo reflecrion and short if?yes:no
 - log-analysis                      -> String type & Split() 
 - log-levels                        -> String type & Trim(),IndexOf()
+- logs-logs-logs                    -> enum & more split train
 - lucians-luscious-lasagna          -> Int type & Logic algorithm
 - motorbike                         ->  Todo ,not implemented now 
 - need-for-speed                    -> class & constructor
