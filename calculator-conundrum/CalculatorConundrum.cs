@@ -5,45 +5,38 @@ public static class SimpleCalculator
     public static string Calculate(int operand1, int operand2, string operation)
     {
         int resultCalculate = 0;
-        string _Calculate = "";
-        if (operation == null)throw new ArgumentNullException(nameof(operation));
-        if (operation.Length > 1){throw new ArgumentOutOfRangeException("ArgumentOutOfRangeException");}
-        switch(operation)
+        string _Calculate = "";    
+        try
         {
-            default :
-                throw new ArgumentException("ArgumentException.", "number"); 
-                break;
-            case null :
-                throw new ArgumentNullException("ArgumentNullException.", "number"); 
-                break;                
-            case "+" :
-                resultCalculate = operand1 + operand2;
-                _Calculate = $"{operand1} + {operand2} = {resultCalculate}";
-                break;
-            case "/" : 
-                if (operand1 == 0 || operand2 == 0)
-                {
-                    _Calculate = "Division by zero is not allowed." ;
+            switch(operation)
+            {
+                default :
+                    throw new ArgumentException();               
+                case "+" :
+                    resultCalculate = operand1 + operand2;
                     break;
-                }
-                resultCalculate = operand1 / operand2;
-                _Calculate = $"{operand1} / {operand2} = {resultCalculate}";
-                break;
-            case "*" :    
-                resultCalculate = operand1 * operand2;
-                _Calculate = $"{operand1} * {operand2} = {resultCalculate}";
-                break;
-            case "-" :
-                if(operand1 - operand2 < 0)
-                {
-                    throw new ArgumentOutOfRangeException("illgal opperation.", "number");
-                    break;
-                }           
-                resultCalculate = operand1 - operand2;
-                _Calculate = $"{operand1} - {operand2} = {resultCalculate}";    
-                break;    
+                case "/" : 
+                    try
+                    {
+                        resultCalculate = operand1 / operand2;
+                        break;  
+                    }
+                    catch (Exception e)
+                    {  
+                        return "Division by zero is not allowed." ;    
+                    }
+                case "*" :    
+                    resultCalculate = operand1 * operand2;
+                    break;   
+            }
         }
-        Console.WriteLine(_Calculate);
+        catch (Exception e)
+        {
+            if (operation == null)throw new ArgumentNullException(nameof(operation));
+            if (operation.Length > 1){throw new ArgumentOutOfRangeException("illegal operator");}
+            if (operation.Length == 0){throw new ArgumentException("no operator");}
+        }
+         _Calculate = $"{operand1} {operation} {operand2} = {resultCalculate}";
         return _Calculate;
     }
 }
