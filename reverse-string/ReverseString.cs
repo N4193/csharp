@@ -5,12 +5,11 @@ public static class ReverseString
 {
     public static string Reverse(string input)
     {
-        StringBuilder output = new StringBuilder(""); //revers output       
-        for (int i = 0 ; i < input.Length; i++)
+        var output = new StringBuilder(); //revers output       
+        for (int i = input.Length - 1; i >= 0; i--)
         {
-            output.Append(input[(input.Length - 1) - i].ToString());
+            output.Append(input[i]);
         }
         return output.ToString();
-
     }
 } 
