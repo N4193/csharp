@@ -24,6 +24,7 @@ some folder to learn C# lang
 - need-for-speed                    -> class & constructor
 - phone-number-analysis             -> Analyse Array[] & Split()
 - roll-the-die                      -> Random()
+- SecureMunchesterUnited            -> operator "is" to compare classObject
 - squeaky-clean                     -> Char & StringBluider()
 - tim-from-marketing                -> nullable type + StringBluider()
 - todoListProject                   ->  Comming soon
