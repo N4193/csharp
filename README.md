@@ -23,6 +23,7 @@ some folder to learn C# lang
 - motorbike                         ->  Todo ,not implemented now 
 - need-for-speed                    -> class & constructor
 - phone-number-analysis             -> Analyse Array[] & Split()
+- ReverseString                     -> String & Arrays[] & loop & more 
 - roll-the-die                      -> Random()
 - SecureMunchesterUnited            -> operator "is" to compare classObject
 - squeaky-clean                     -> Char & StringBluider()
