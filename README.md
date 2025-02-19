@@ -25,6 +25,7 @@ some folder to learn C# lang
 - phone-number-analysis             -> Analyse Array[] & Split()
 - ReverseString                     -> String & Arrays[] & loop & more 
 - roll-the-die                      -> Random()
+- RotationalCipher                  -> The Caesar cipher algoritme !☺
 - SecureMunchesterUnited            -> operator "is" to compare classObject
 - squeaky-clean                     -> Char & StringBluider()
 - tim-from-marketing                -> nullable type + StringBluider()
