@@ -30,6 +30,7 @@ some folder to learn C# lang
 - squeaky-clean                     -> Char & StringBluider()
 - tim-from-marketing                -> nullable type + StringBluider()
 - todoListProject                   ->  Comming soon
+- WeighingMachine                   -> class proprety{get;set}
 - wizard-and-warriors               -> Class and Inheritance
 
 ## Source
