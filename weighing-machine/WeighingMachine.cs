@@ -2,6 +2,7 @@ using System;
 
 class WeighingMachine
 {
+    //work on CLI 9/9test via "dotnet test" with framework net9.0 :D 
     public WeighingMachine(int precision) => Precision = precision;
     public int Precision {get; private set;}
     private double _weight;
