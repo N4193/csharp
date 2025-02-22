@@ -11,8 +11,8 @@ class WeighingMachine
         get => _weight;
         set
         {
-            if (value < 0)throw new ArgumentOutOfRangeException("no negative !");
-                _weight = value;                
+            if (!(value < 0)) {_weight = value; }else
+            {throw new ArgumentOutOfRangeException("no negative !");}                
         }
     }
     public string DisplayWeight 

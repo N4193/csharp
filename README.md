@@ -14,6 +14,7 @@ some folder to learn C# lang
 - calculator-conundrum              -> execption & try | catch 
 - cars-assemble                     -> Comparator & Logic algorithm
 - hello-world                       -> The first one you know ♥
+- hyper-optimized-telemetry         -> integer.MinValue/.MaxValue
 - interest-is-interesting           -> Float variable & While() loop   
 - leap                              -> algo reflecrion and short if?yes:no
 - log-analysis                      -> String type & Split() 
