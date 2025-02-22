@@ -28,6 +28,7 @@ some folder to learn C# lang
 - RotationalCipher                  -> The Caesar cipher algoritme !☺
 - SecureMunchesterUnited            -> operator "is" to compare classObject
 - squeaky-clean                     -> Char & StringBluider()
+- the-weather-in-deather            -> fator a lot the code ! 
 - tim-from-marketing                -> nullable type + StringBluider()
 - todoListProject                   ->  Comming soon
 - WeighingMachine                   -> class proprety{get;set}
