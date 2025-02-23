@@ -6,8 +6,6 @@ public static class TelemetryBuffer
     {  
        //the array Lenght =  1 + 8 -> buffer[0] + buffer[1] a [8]
        var buffer = new byte[9];
-
-        
        var (signed, bytes) = reading switch
         {
             > uint.MaxValue => (true, BitConverter.GetBytes(reading)), 

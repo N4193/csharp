@@ -67,17 +67,16 @@ some folder to learn C# lang
     //memo : is_this_condition_true ? yes : no
     condition ? consequent : alternative
 
-    //---   I build lil dirty tool to scan _CHANGE_ME proprety & method() 
-    object MyVarToInspect = _CHANGE_ME;        //changer la variable report ici /!\   
+    /*
+    I build lil dirty tool to scan _CHANGE_ME proprety & method()  /!\
+    object MyVarToInspect = _CHANGE_ME;           
     if (MyVarToInspect == null) Console.WriteLine("null object");
         Console.WriteLine($"object: {MyVarToInspect}");
-        var type = MyVarToInspect.GetType();
-        //method() loop 
+        var type = MyVarToInspect.GetType(); 
         foreach (var method in type.GetMethods())
         {
             Console.WriteLine($"Method: {method.Name}()");
         }
-        //value loop
         foreach (var prop in type.GetProperties())
         {
             if (prop.PropertyType == typeof(string))
@@ -89,4 +88,4 @@ some folder to learn C# lang
                 }
             }
         }
-    //---
+    */

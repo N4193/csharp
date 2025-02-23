@@ -4,39 +4,23 @@ public static class SimpleCalculator
 {
     public static string Calculate(int operand1, int operand2, string operation)
     {
-        int resultCalculate = 0;
-        string _Calculate = "";    
+       int resultCalculate = 0;
         try
         {
-            switch(operation)
+            resultCalculate = operation switch
             {
-                default :
-                    throw new ArgumentException();               
-                case "+" :
-                    resultCalculate = operand1 + operand2;
-                    break;
-                case "/" : 
-                    try
-                    {
-                        resultCalculate = operand1 / operand2;
-                        break;  
-                    }
-                    catch (Exception e)
-                    {  
-                        return "Division by zero is not allowed." ;    
-                    }
-                case "*" :    
-                    resultCalculate = operand1 * operand2;
-                    break;   
-            }
+                "+" =>  operand1 + operand2,
+                "/" =>  operand1 == 0 || operand2 == 0? 0  : operand1 / operand2,
+                "*" =>  operand1 * operand2,
+                _ => throw new ArgumentException()
+            };
         }
-        catch (Exception e)
+        catch (Exception)
         {
             if (operation == null)throw new ArgumentNullException(nameof(operation));
             if (operation.Length > 1){throw new ArgumentOutOfRangeException("illegal operator");}
             if (operation.Length == 0){throw new ArgumentException("no operator");}
         }
-         _Calculate = $"{operand1} {operation} {operand2} = {resultCalculate}";
-        return _Calculate;
+        return resultCalculate == 0? "Division by zero is not allowed." : $"{operand1} {operation} {operand2} = {resultCalculate}";
     }
 }
