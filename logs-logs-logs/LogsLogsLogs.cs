@@ -10,40 +10,20 @@ public enum LogLevel
     Error = 6,
     Fatal = 42    
 }
-
 static class LogLine
 {
     public static LogLevel ParseLogLevel(string logLine)
     {
-        
-        switch(logLine.Split("[")[1].Split("]")[0])
+        return (logLine.Split("[")[1].Split("]")[0]) switch
         {
-            case "TRC":
-                return LogLevel.Trace;
-                break;
-            case "DBG":
-                return LogLevel.Debug;
-                break;
-            case "INF":
-                return LogLevel.Info;
-                break;
-            case "WRN":
-                return LogLevel.Warning;
-                break;
-            case "ERR":
-                return LogLevel.Error;
-                break;
-            case "FTL":
-                return LogLevel.Fatal;
-                break;             
-        }
-        //Console.WriteLine(LogLevel.Unknown.)
-        return LogLevel.Unknown; 
+            "TRC"=> LogLevel.Trace,
+            "DBG"=> LogLevel.Debug,
+            "INF"=> LogLevel.Info,
+            "WRN"=> LogLevel.Warning,
+            "ERR"=> LogLevel.Error,
+            "FTL"=> LogLevel.Fatal,
+            _    => LogLevel.Unknown    
+        };
     }
-
-    public static string OutputForShortLog(LogLevel logLevel, string message)
-    {
-        String _OutputForShortLog = $"{(int)logLevel}:{message}";
-        return $"{(int)logLevel}:{message}";
-    }
+    public static string OutputForShortLog(LogLevel logLevel, string message)=> $"{(int)logLevel}:{message}";
 }

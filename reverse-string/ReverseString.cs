@@ -5,7 +5,7 @@ public static class ReverseString
 {
     public static string Reverse(string input)
     {
-        var output = new StringBuilder(); //revers output       
+        var output = new StringBuilder(); //reverse output
         for (int i = input.Length - 1; i >= 0; i--)
         {
             output.Append(input[i]);

@@ -54,7 +54,7 @@ public class WeatherStation
             {
                 WindDirection.Northerly => Outlook.Cool,
                 WindDirection.Southerly => Outlook.Good,
-                WindDirection.Easterly when reading.Temperature >= 20 =>  Outlook.Good,
+                WindDirection.Easterly when reading.Temperature >= 20 => Outlook.Good,
                 WindDirection.Easterly when reading.Temperature <= 20 => Outlook.Warm,
                 WindDirection.Westerly => Outlook.Rainy,
                 _ => throw new ArgumentException()

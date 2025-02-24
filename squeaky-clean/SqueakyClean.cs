@@ -19,7 +19,6 @@ public static class Identifier
                 _Clean.Remove(i, 1);
                 _Clean.Insert(i, "CTRL");
             }
-            
             //task3 remove "-" + ToUpperInvariant()
             if (_Clean[i] == '-' )   
             { 
@@ -41,11 +40,6 @@ public static class Identifier
                 _Clean.Remove(i, 1);
             }
         }        
-        //LOG
-        Console.WriteLine(_Clean.Length);
-        Console.WriteLine(_Clean);
-        
-        //return
         return _Clean.ToString();
     }
 }

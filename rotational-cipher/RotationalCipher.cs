@@ -5,14 +5,13 @@ public static class RotationalCipher
 {
     public static string Rotate(string text, int shiftKey)
     {
-        if (text == null) return ""; // Sécurise contre les valeurs nulles
         shiftKey = shiftKey % 26; // Évite tout dépassement
-
         StringBuilder result = new StringBuilder();
 
+        if (text == null) return ""; // Sécurise contre les valeurs nulles
         foreach (char c in text)
         {
-            if (char.IsLetter(c)) // IF lettrer
+            if (char.IsLetter(c)) // IF isLettrer
             {
                 char baseChar = char.IsUpper(c) ? 'A' : 'a';
                 int newIndex = (c - baseChar + shiftKey) % 26;

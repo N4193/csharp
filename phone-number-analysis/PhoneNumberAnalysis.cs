@@ -10,5 +10,5 @@ public static class PhoneNumber
                 splitNumber[2]);
     }
 
-    public static bool IsFake((bool IsNewYork, bool IsFake, string LocalNumber)phoneNumberInfo)=>phoneNumberInfo.IsFake;
+    public static bool IsFake((bool IsNewYork, bool IsFake, string LocalNumber)phoneNumberInfo) => phoneNumberInfo.IsFake;
 }

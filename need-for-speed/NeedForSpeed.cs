@@ -8,7 +8,7 @@ class RemoteControlCar
     private int batteries = 100;//actual car batteries percent
     private int metersDriven = 0;//actual meters the car has drive
     private bool _BatteryDrained = false;//true if the battries is over
-    //get stats function()
+    //get_stats() function
     public int get_speed() => this.speed;
     public int get_batteryDrain() => this.batteryDrain;
     public int get_batteries() => this.batteries;
@@ -19,8 +19,8 @@ class RemoteControlCar
         this.speed = speed;
         this.batteryDrain = batteryDrain;
     }
-    public bool BatteryDrained()=>(get_batteries() - get_batteryDrain()) < 0;
-    public int DistanceDriven() => this.metersDriven;
+    public bool BatteryDrained() => (get_batteries() - get_batteryDrain()) < 0;
+    public int  DistanceDriven() => this.metersDriven;
     public void Drive()
     {
         if (!(BatteryDrained()))
