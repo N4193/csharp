@@ -4,24 +4,21 @@ static class GameMaster
     
     public static string Describe(Destination destination)=> $"You've arrived at {destination.Name}, which has {destination.Inhabitants} inhabitants.";
     
-    public static string Describe(TravelMethod travelMethod)
+    public static string Describe(TravelMethod travelMethod  )
     {
        return  travelMethod.ToString() switch
        {
             "Walking" => "You're traveling to your destination by walking.",
             "Horseback" => "You're traveling to your destination on horseback.",
-            _ => "Null"
+            _ => "You're traveling to your destination by walking."
        };
     }
 
-    public static string Describe(Character character, Destination destination, TravelMethod travelMethod)
-    {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Character, Destination, TravelMethod) method");
-    }
+    public static string Describe(Character character, Destination destination, TravelMethod travelMethod) => $"{Describe(character )} {Describe(travelMethod)} {Describe(destination)}";
 
     public static string Describe(Character character, Destination destination)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Character, Destination) method");
+        return $"{Describe(character )} You're traveling to your destination by walking. {Describe(destination)}";
     }
 }
 
