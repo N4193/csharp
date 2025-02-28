@@ -34,6 +34,7 @@ some folder to learn C# lang
 - todoListProject                   ->  Comming soon
 - WeighingMachine                   -> class proprety{get;set}
 - wizard-and-warriors               -> Class and Inheritance
+- wizards-and-warriors-2            -> _Method overloading_
 
 ## Source
 - @N4193
