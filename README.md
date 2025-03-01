@@ -16,6 +16,7 @@ some folder to learn C# lang
 - hello-world                       -> The first one you know ♥
 - hyper-optimized-telemetry         -> integer.MinValue/.MaxValue
 - interest-is-interesting           -> Float variable & While() loop   
+- International Calling Connoisseur -> Dictionaries
 - leap                              -> algo reflecrion and short if?yes:no
 - log-analysis                      -> String type & Split() 
 - log-levels                        -> String type & Trim(),IndexOf()
