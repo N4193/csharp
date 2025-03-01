@@ -4,22 +4,15 @@ static class GameMaster
     
     public static string Describe(Destination destination)=> $"You've arrived at {destination.Name}, which has {destination.Inhabitants} inhabitants.";
     
-    public static string Describe(TravelMethod travelMethod  )
-    {
-       return  travelMethod.ToString() switch
+    public static string Describe(TravelMethod travelMethod  ) => travelMethod switch
        {
-            "Walking" => "You're traveling to your destination by walking.",
-            "Horseback" => "You're traveling to your destination on horseback.",
+            TravelMethod.Walking => "You're traveling to your destination by walking.",
+            TravelMethod.Horseback => "You're traveling to your destination on horseback.",
             _ => "You're traveling to your destination by walking."
        };
-    }
 
-    public static string Describe(Character character, Destination destination, TravelMethod travelMethod) => $"{Describe(character )} {Describe(travelMethod)} {Describe(destination)}";
+    public static string Describe(Character character, Destination destination, TravelMethod travelMethod = TravelMethod.Walking ) => $"{Describe(character )} {Describe(travelMethod)} {Describe(destination)}";
 
-    public static string Describe(Character character, Destination destination)
-    {
-        return $"{Describe(character )} You're traveling to your destination by walking. {Describe(destination)}";
-    }
 }
 
 class Character
