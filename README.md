@@ -9,10 +9,12 @@ One folder a time you can test the code by using the "dotnet test" command
 ## What's here ?
 some folder to learn C# lang 
 - annalyns-infiltration             -> Opperator "&&" and "||" 
+- attack-of-the-trolls              -> C# Attribute
 - bird-watcher                      -> Array[]
 - booking-up-for-beauty             -> DateTime & Parse()
 - calculator-conundrum              -> execption & try | catch 
 - cars-assemble                     -> Comparator & Logic algorithm
+- football-match-reports            -> switch 
 - hello-world                       -> The first one you know ♥
 - hyper-optimized-telemetry         -> integer.MinValue/.MaxValue
 - interest-is-interesting           -> Float variable & While() loop   
@@ -25,12 +27,13 @@ some folder to learn C# lang
 - motorbike                         ->  Todo ,not implemented now 
 - need-for-speed                    -> class & constructor
 - phone-number-analysis             -> Analyse Array[] & Split()
+- Remote Control Competition        -> Interfaces
 - ReverseString                     -> String & Arrays[] & loop & more 
 - roll-the-die                      -> Random()
 - RotationalCipher                  -> The Caesar cipher algoritme !☺
 - SecureMunchesterUnited            -> operator "is" to compare classObject
 - squeaky-clean                     -> Char & StringBluider()
-- the-weather-in-deather            -> fator a lot the code ! 
+- the-weather-in-deather            -> Factor a lot the code ! 
 - tim-from-marketing                -> nullable type + StringBluider()
 - todoListProject                   ->  Comming soon
 - WeighingMachine                   -> class proprety{get;set}
