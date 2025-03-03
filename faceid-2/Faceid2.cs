@@ -1,57 +1,22 @@
-public class FacialFeatures
-{
-    public string EyeColor { get; }
-    public decimal PhiltrumWidth { get; }
-
-    public FacialFeatures(string eyeColor, decimal philtrumWidth)
-    {
-        EyeColor = eyeColor;
-        PhiltrumWidth = philtrumWidth;
-    }
-    // TODO: implement equality and GetHashCode() methods
-
-}
-
-public class Identity
-{
-    public string Email { get; }
-    public FacialFeatures FacialFeatures { get; }
-
-    public Identity(string email, FacialFeatures facialFeatures)
-    {
-        Email = email;
-        FacialFeatures = facialFeatures;
-    }
-    // TODO: implement equality and GetHashCode() methods
-}
+public record FacialFeatures(string EyeColor, decimal PhiltrumWidth);
+public record Identity(string Email,FacialFeatures FacialFeatures);
 
 public class Authenticator
 {
-    public static bool AreSameFace(FacialFeatures faceA, FacialFeatures faceB)
-    {
-        return (faceA.EyeColor.GetHashCode()==faceB.EyeColor.GetHashCode());
-    }
+    private readonly Identity admin = new Identity("admin@exerc.ism", new FacialFeatures("green",0.9m));
+    private readonly HashSet<Identity> allIdentity = new HashSet<Identity>();
+     
+    public static bool AreSameFace(FacialFeatures faceA, FacialFeatures faceB) => (faceA.Equals(faceB));
 
-    public bool IsAdmin(Identity identity) => (identity.Email == "admin@exerc.ism" &&
-                identity.FacialFeatures.EyeColor.ToString() == "green" &&
-                identity.FacialFeatures.PhiltrumWidth == 0.9m);
+    public bool IsAdmin(Identity identity) => (identity.Equals(admin));
 
-    public bool Register(Identity identity)
-    {
-        if(IsRegistered(identity))
-        {
-            return false;
-        }
-        return true;
-    }
+    public bool Register(Identity identity) => allIdentity.Add(identity);    
 
-    public bool IsRegistered(Identity identity)
-    {
-        return true;
-    }
+    public bool IsRegistered(Identity identity) => allIdentity.Contains(identity);
 
-    public static bool AreSameObject(Identity identityA, Identity identityB)
-    {
-        return (identityA.GetHashCode()==identityB.GetHashCode());
-    }
+    public static bool AreSameObject(Identity identityA, Identity identityB) => (object.ReferenceEquals(identityB,identityA));
 }
+/*
+BIG THANKS TO Coding Tutorials ♥
+---> https://www.youtube.com/watch?v=JDLqwxYME6M 
+*/

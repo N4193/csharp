@@ -14,6 +14,7 @@ some folder to learn C# lang
 - booking-up-for-beauty             -> DateTime & Parse()
 - calculator-conundrum              -> execption & try | catch 
 - cars-assemble                     -> Comparator & Logic algorithm
+- faceid-2                          -> Class |record |struct
 - football-match-reports            -> switch 
 - hello-world                       -> The first one you know ♥
 - hyper-optimized-telemetry         -> integer.MinValue/.MaxValue
