@@ -14,6 +14,7 @@ some folder to learn C# lang
 - booking-up-for-beauty             -> DateTime & Parse()
 - calculator-conundrum              -> execption & try | catch 
 - cars-assemble                     -> Comparator & Logic algorithm
+- developer-privileges              -> Object Initializers
 - faceid-2                          -> Class |record |struct
 - football-match-reports            -> switch 
 - hello-world                       -> The first one you know ♥
@@ -64,6 +65,16 @@ some folder to learn C# lang
 //sorry for ppl i forget here i love you a lot ♥
 
 ## C#-EZcheatSheet / toolbox
+    //innitialisze
+    class :
+    ->var person = new Person{Name="The President", Address = "Élysée Palace", ect};
+    Collection :
+    IList<Person> people = new List<Person>{ new Person(), new Person{Name="Joe Shmo"}};
+
+    Dictionary :
+    ->IDictionary<int, string> numbers = new Dictionary<int, string>{ [0] = "zero", [1] = "one"...};
+
+
     //output the proprety "year" from Variable "toto"
     Console.WriteLine(toto.year);
 
