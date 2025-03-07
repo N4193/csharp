@@ -12,7 +12,8 @@ some folder to learn C# lang
 - attack-of-the-trolls              -> C# Attribute
 - bird-watcher                      -> Array[]
 - booking-up-for-beauty             -> DateTime & Parse()
-- calculator-conundrum              -> execption & try | catch 
+- building-telemetry                -> Parametre modifier
+- calculator-conundrum              -> Execption & Try | Catch 
 - cars-assemble                     -> Comparator & Logic algorithm
 - developer-privileges              ->  /!\Object Initializers
 - faceid-2                          ->  /!\Class |record |struct
