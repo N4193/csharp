@@ -14,14 +14,11 @@ public class RemoteControlCar
         }
     }
 
-    public void SetSponsors(params string[] sponsors)
-    {
-        throw new NotImplementedException("Please implement the RemoteControlCar.SetSponsors() method");
-    }
+    public void SetSponsors(params string[] sponsors) => this.sponsors = sponsors ;
 
     public string DisplaySponsor(int sponsorNum)
     {
-        throw new NotImplementedException("Please implement the RemoteControlCar.DisplaySponsor() method");
+        return sponsors[sponsorNum];
     }
 
     public bool GetTelemetryData(ref int serialNum,
