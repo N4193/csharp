@@ -1,0 +1,6 @@
+C:\Users\N4193\Documents\GitHubRepo\csharp\rotational-cipher\obj\Debug\net9.0\RotationalCipher.csproj.AssemblyReference.cache
+C:\Users\N4193\Documents\GitHubRepo\csharp\rotational-cipher\obj\Debug\net9.0\RotationalCipher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\N4193\Documents\GitHubRepo\csharp\rotational-cipher\obj\Debug\net9.0\RotationalCipher.AssemblyInfoInputs.cache
+C:\Users\N4193\Documents\GitHubRepo\csharp\rotational-cipher\obj\Debug\net9.0\RotationalCipher.AssemblyInfo.cs
+C:\Users\N4193\Documents\GitHubRepo\csharp\rotational-cipher\obj\Debug\net9.0\RotationalCipher.csproj.CoreCompileInputs.cache
+C:\Users\N4193\Documents\GitHubRepo\csharp\rotational-cipher\obj\Debug\net9.0\RotationalCipher.sourcelink.json

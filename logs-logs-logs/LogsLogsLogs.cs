@@ -12,9 +12,7 @@ public enum LogLevel
 }
 static class LogLine
 {
-    public static LogLevel ParseLogLevel(string logLine)
-    {
-        return (logLine.Split("[")[1].Split("]")[0]) switch
+    public static LogLevel ParseLogLevel(string logLine)=>(logLine.Split("[")[1].Split("]")[0]) switch
         {
             "TRC"=> LogLevel.Trace,
             "DBG"=> LogLevel.Debug,
@@ -24,6 +22,5 @@ static class LogLine
             "FTL"=> LogLevel.Fatal,
             _    => LogLevel.Unknown    
         };
-    }
     public static string OutputForShortLog(LogLevel logLevel, string message)=> $"{(int)logLevel}:{message}";
 }

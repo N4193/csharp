@@ -16,15 +16,9 @@ public static class TelemetryBuffer
             >= int.MinValue => (true, BitConverter.GetBytes((int)reading)),
             _ => (true, BitConverter.GetBytes(reading)),
         };
-        //Console.WriteLine($"if signed = False ({signed}) =>  {bytes.Length} OR"); 
-        //Console.WriteLine($"if signed = True  ({signed}) =>  {byte.MaxValue + 1} - {bytes.Length} =  {(byte.MaxValue + 1) - bytes.Length}");
+        buffer[0] = (byte)(signed ? byte.MaxValue + 1 - bytes.Length : bytes.Length);   
 
-        //buffer[0]->if signed => bytes Length || if not signed => 256 - bytes Length ;
-        buffer[0] = (byte)(signed ? byte.MaxValue + 1 - bytes.Length : bytes.Length);
-        
-        //Console.WriteLine($"{buffer[0]},{buffer[1]},{buffer[2]},{buffer[3]},{buffer[4]},{buffer[5]},{buffer[6]},{buffer[7]},{buffer[8]}");
-        //copy from bytes[0]-[7] to  buffer[1]-[8];
-        Array.Copy(bytes, 0, buffer, 1, bytes.Length);
+        Array.Copy(bytes, 0, buffer, 1, bytes.Length);     
         
         return buffer;
     }
