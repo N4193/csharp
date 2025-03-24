@@ -50,6 +50,7 @@ public class TelemetryClient
     }
     public string GetBatteryUsagePerMeter(int serialNum)
     {
+        //task3
         int batteryPercentage,distanceDrivenInMeters = 0;
         car.GetTelemetryData(ref serialNum,out batteryPercentage,out distanceDrivenInMeters);
         if(distanceDrivenInMeters>0)
