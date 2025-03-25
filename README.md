@@ -20,6 +20,7 @@ some folder to learn C# lang
 - football-match-reports            -> switch 
 - hello-world                       -> The first one you know ♥
 - hyper-optimized-telemetry         -> integer.MinValue/.MaxValue
+- HyperinflationHitsHyperia         -> int OverFlow && Float infinity 
 - interest-is-interesting           -> Float variable & While() loop   
 - International Calling Connoisseur -> Dictionaries
 - leap                              -> algo reflecrion and short if?yes:no
