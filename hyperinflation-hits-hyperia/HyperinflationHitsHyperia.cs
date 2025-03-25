@@ -9,7 +9,7 @@ public static class CentralBank
                 return $"{@base * multiplier}";
             }
         }
-        catch (OverflowException e)
+        catch (OverflowException)
         {
             return "*** Too Big ***";
         }
@@ -21,11 +21,22 @@ public static class CentralBank
        {
            return "*** Too Big ***";
        }
-        return (@base * multiplier).ToString();
+        return $"{@base * multiplier}";
     }
 
     public static string DisplayChiefEconomistSalary(decimal salaryBase, decimal multiplier)
     {
-        throw new NotImplementedException($"Please implement the (static) CentralBank.DisplayChiefEconomistSalary() method");
+         try
+        {
+            checked
+            {
+                return $"{salaryBase * multiplier}";
+            }
+        }
+        catch (OverflowException)
+        {
+            return "*** Much Too Big ***";
+        }
+       
     }
 }
