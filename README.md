@@ -28,11 +28,12 @@ some folder to learn C# lang
 - log-levels                        -> String type & Trim(),IndexOf()
 - logs-logs-logs                    -> enum & more split train
 - lucians-luscious-lasagna          -> Int type & Logic algorithm
-- motorbike                         ->  Todo ,not implemented now 
+- motorbike                         -> Todo ,not implemented now 
 - need-for-speed                    -> class & constructor
 - phone-number-analysis             -> Analyse Array[] & Split()
 - Remote Control Competition        -> Interfaces
 - ReverseString                     -> String & Arrays[] & loop & more 
+- Resistor-color                    -> Switch & 
 - roll-the-die                      -> Random()
 - RotationalCipher                  -> The Caesar cipher algoritme !☺
 - SecureMunchesterUnited            -> operator "is" to compare classObject
