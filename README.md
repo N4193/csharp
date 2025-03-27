@@ -10,6 +10,7 @@ One folder a time you can test the code by using the "dotnet test" command
 some folder to learn C# lang 
 - annalyns-infiltration             -> Opperator "&&" and "||" 
 - attack-of-the-trolls              -> C# Attribute
+- BeautySalonGoesGlobal             -> DateTime & TimeZone
 - bird-watcher                      -> Array[]
 - booking-up-for-beauty             -> DateTime & Parse()
 - building-telemetry                -> Parametre modifier
